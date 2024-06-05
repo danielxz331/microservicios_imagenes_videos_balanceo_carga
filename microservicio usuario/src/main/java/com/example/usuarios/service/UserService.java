@@ -21,7 +21,8 @@ public class UserService {
     }
     
     public boolean existsByUsername(String username){
-        return userRepository.findByUsername(username) != null;
+        boolean userExists = userRepository.findByUsername(username).isPresent();
+        return userExists;
     }
     
     public List<UserDTO> listUsers(){
