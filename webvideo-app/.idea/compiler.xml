@@ -7,12 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="webcam-app" />
+        <module name="webvideo-app" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="webcam-app" options="-parameters" />
+      <module name="webvideo-app" options="-parameters" />
     </option>
   </component>
 </project>

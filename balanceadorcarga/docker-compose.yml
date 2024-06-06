@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  nginx:
+    image: nginx:alpine
+    container_name: balanceador-nginx
+    restart: unless-stopped
+    ports:
+      - 81:80
+    volumes:
+      - ./nginx:/etc/nginx/conf.d/
